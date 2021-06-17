@@ -17,9 +17,9 @@ user_answer = int(input(f'Попробуйте отгадать число от 
 
 while try_num != 0:
     if user_answer < ran_num:
+        try_num -= 1
         user_answer = int(input(f'Ваше число меньше чем загаданное. Осталось попыток: {try_num}\n'
                                 f'Попробуйте еще раз: '))
-        try_num -= 1
     elif user_answer > ran_num:
         user_answer = int(input(f'Ваше число больше чем загаданное. Осталось попыток: {try_num}\n'
                                 f'Попробуйте еще раз: '))
